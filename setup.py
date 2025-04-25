@@ -1,10 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="project-tree-cli",
+    name="ferret",
     version="0.1.0",
     description="A simple CLI to display and explain project directory structures.",
-    author="Your Name",
+    author="Abishek Padaki",
+    license="MIT",
+    classifiers=[
+        "License :: OSI Approved :: MIT License"
+    ],
     packages=find_packages(),
     install_requires=[
         "click",
@@ -12,7 +16,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "project-tree=project_tree_cli.cli:cli"
+            "ferret=project_tree_cli.cli:cli"
         ]
     },
     python_requires=">=3.7",
